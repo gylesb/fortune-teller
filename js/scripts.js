@@ -1,13 +1,26 @@
 $(document).ready(function() {
 
   $("#formOne").submit(function(event) {
-    alert("hello");
-    var unluckyArray = [];
+    var userResponse = [];
+    var luckyScore = 0;
+
     $("input:checkbox[name=unlucky]:checked").each(function() {
-      var unlucky = $(this).val();
-      unluckyArray.push(unlucky);
+      var unlucky = parseInt($(this).val());
+      return luckyScore = luckyScore + unlucky;
+
     });
-          alert(unluckyArray);
+    $("input:checkbox[name=lucky]:checked").each(function() {
+      var lucky = parseInt($(this).val());
+      return luckyScore = luckyScore + lucky;
+    })
+
+    if (luckyScore === 0) {
+      $("#result3").show();
+    } else if (luckyScore >= 0) {
+      $("#result1").show();
+    } else if (luckyScore <= 0) {
+      $("#result2").show();
+    }
 
     event.preventDefault();
   })
