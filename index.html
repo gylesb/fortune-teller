@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>jQuery Fortune Teller</h1>
+    </div>
+    <div class="container">
+      <div class="well">
+        <h1>Please check all the boxes that apply!</h1>
+      </div>
+      <form id="formOne">
+        <p>First, lets see how unluck you were.</p>
+        <div class="form-group" id="unlucky">
+          <input type="checkbox" name="unlucky" value="blackCat"> Saw a Black Cat<br>
+          <input type="checkbox" name="unlucky" value="ladderUnder"> Walking Under a Ladder<br>
+          <input type="checkbox" name="unlucky" value="toeStub"> Stubbing your Toe<br>
+          <input type="checkbox" name="unlucky" value="bittenDog"> Bitten by a Dog<br>
+          <input type="checkbox" name="unlucky" value="soupSpill"> Spilling soup on your lap<br>
+          <input type="checkbox" name="unlucky" value="toastFlip"> Flipping a piece of toast jelly side down<br>
+        </div>
+        <p>Now lets see how lucky you were.</p>
+        <div class="form-group" id="lucky">
+          <input type="checkbox" name="lucky" value="doubleRainbow"> Saw a Double Rainbow<br>
+          <input type="checkbox" name="lucky" value="fourLeavedClover"> Picked a Four Leaved Clover<br>
+          <input type="checkbox" name="lucky" value="headsUpPenny"> Found a penny heads up<br>
+          <input type="checkbox" name="lucky" value="cashOnRoad"> Found Cash on the ground<br>
+          <input type="checkbox" name="lucky" value="praiseStranger"> Complimented by a stranger<br>
+          <input type="checkbox" name="lucky" value="so"> Met someone Special =)<br>
+        </div>
+        <button type="submit" class="btn btn-danger">Feeling Lucky?</button><br>
+      </form>
+      <!-- Results -->
+      <div class="results">
+        <div id="result1">
+          <div class="well">
+            <h1></h1>
+          </div>
+        </div>
+        <div id="result2">
+          <div class="well">
+            <h1></h1>
+          </div>
+        </div>
+        <div id="result3">
+          <div class="well">
+            <h1></h1>
+          </div>
+        </div>
+        <div id="result4">
+          <div class="well">
+            <h1></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
